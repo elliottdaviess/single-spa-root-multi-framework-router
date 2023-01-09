@@ -17,7 +17,9 @@
     Learn more about CSP policies at https://content-security-policy.com/#directive
   -->
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
+    content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: http://localhost:8080; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
+  <!-- <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';"> -->
   <meta name="importmap-type" content="systemjs-importmap" />
   <!-- If you wish to turn off import-map-overrides for specific environments (prod), uncomment the line below -->
   <!-- More info at https://github.com/joeldenning/import-map-overrides/blob/master/docs/configuration.md#domain-list -->
@@ -31,6 +33,8 @@
 
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
+  <!-- "@org1/react-app": "https://gilded-jalebi-d317cf.netlify.app/react-mfe-routingexample.js", -->
+
   <script type="systemjs-importmap">
     {
       "imports": {
@@ -38,7 +42,7 @@
         "react": "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.production.min.js",
          "@org1/root-config": "https://remarkable-kashata-cd7556.netlify.app/org1-root-config.js",
-         "@org1/react-app": "https://gilded-jalebi-d317cf.netlify.app/react-mfe-routingexample.js",
+         "@org1/react-app": "http://localhost:8080/react-mfe-routingexample.js",
          "angular-app": "https://wonderful-squirrel-4ae9cd.netlify.app/main.js"
       }
     }
