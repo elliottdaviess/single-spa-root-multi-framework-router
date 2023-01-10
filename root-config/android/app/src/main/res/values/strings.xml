@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">nextgen</string>
+    <string name="title_activity_main">nextgen</string>
+    <string name="package_name">com.admiral.uk</string>
+    <string name="custom_url_scheme">com.admiral.uk</string>
+</resources>
