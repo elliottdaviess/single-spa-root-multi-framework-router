@@ -45,6 +45,7 @@
     "@capacitor/cli": "^4.5.0",
     "@capacitor/core": "^4.5.0",
     "@capacitor/ios": "^4.5.0",
+    "@capacitor/camera": "^4.1.4",
     "@types/jest": "^26.0.16",
     "@types/systemjs": "^6.1.0",
     "@types/webpack-env": "^1.16.0",
