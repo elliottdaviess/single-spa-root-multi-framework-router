@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import CameraExample from "./capacitor/CameraExample";
 
 export default function StartPage() {
   const history = useHistory();
@@ -14,6 +15,7 @@ export default function StartPage() {
       <button type="button" onClick={handleClick}>
         Next
       </button>
+      <CameraExample></CameraExample>
     </>
   );
 }
