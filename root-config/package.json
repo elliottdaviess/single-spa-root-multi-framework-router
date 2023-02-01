@@ -42,13 +42,15 @@
   },
   "dependencies": {
     "@capacitor/android": "^4.5.0",
+    "@capacitor/camera": "^4.1.4",
     "@capacitor/cli": "^4.5.0",
     "@capacitor/core": "^4.5.0",
+    "@capacitor/google-maps": "^4.3.2",
     "@capacitor/ios": "^4.5.0",
-    "@capacitor/camera": "^4.1.4",
     "@types/jest": "^26.0.16",
     "@types/systemjs": "^6.1.0",
     "@types/webpack-env": "^1.16.0",
+    "cordova-plugin-inappbrowser": "^5.0.0",
     "single-spa": "^5.8.2"
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import CameraExample from "./capacitor/CameraExample";
+import MyComponent from "./capacitor/MyComponent";
 
 export default function StartPage() {
   const history = useHistory();
@@ -16,6 +17,7 @@ export default function StartPage() {
         Next
       </button>
       <CameraExample></CameraExample>
+      <MyComponent></MyComponent>
     </>
   );
 }

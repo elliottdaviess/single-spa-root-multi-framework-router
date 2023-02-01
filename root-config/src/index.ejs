@@ -20,7 +20,8 @@
     content="default-src 'self' https: 10.0.2.2:*; script-src 'unsafe-inline' 'unsafe-eval' https: http://10.0.2.2:*; connect-src https: localhost:* ws://10.0.2.2:*; style-src 'unsafe-inline' https:; object-src 'none';"> -->
 
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: http://localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
+    content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: http://localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none'; img-src * data:;">
+
 
 
   <!-- <meta http-equiv="Content-Security-Policy"
@@ -46,14 +47,23 @@
         "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
         "react": "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.production.min.js",
-        "@org1/root-config": "https://remarkable-kashata-cd7556.netlify.app/org1-root-config.js",
-         "@org1/react-app": "https://gilded-jalebi-d317cf.netlify.app/react-mfe-routingexample.js",
+         "@org1/root-config": "./org1-root-config.js",
+         "@org1/react-app": "http://localhost:8080/react-mfe-routingexample.js",
          "angular-app": "https://wonderful-squirrel-4ae9cd.netlify.app/main.js"
       }
     }
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
+  <link rel="prefetch" href="https://myaccount.admiral.com/static/css/main.5bd7ab97.chunk.css" as="script" />
+  <!-- <script type="text/javascript">
 
+    navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function (err) {
+      console.log('ServiceWorker registration failed: ', err);
+    });
+
+  </script> -->
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="./importmap_local_ios.json"></script> -->
 

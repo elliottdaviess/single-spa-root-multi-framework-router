@@ -1,5 +1,5 @@
 {
   "extends": "ts-config-single-spa",
-  "include": ["src/**/*", "node_modules/@types"],
+  "include": ["public/service-worker.js", "src/**/*", "node_modules/@types"],
   "exclude": ["src/**/*.test*"]
 }
