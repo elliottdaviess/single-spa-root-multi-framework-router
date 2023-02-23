@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import TokenDisplay from "./capacitor/TokenDisplay";
 
 export default function MiddlePage() {
   const history = useHistory();
@@ -21,6 +22,7 @@ export default function MiddlePage() {
       <button type="button" onClick={handleClickNext}>
         Next
       </button>
+      <TokenDisplay />
     </>
   );
 }

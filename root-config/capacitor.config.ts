@@ -8,7 +8,13 @@ const config: CapacitorConfig = {
   server: {
     hostname: "app",
     cleartext: true,
+    allowNavigation: [
+      "cqa81dpon01.admiral.non-prod.bolt.admiral.uk",
+      "*cqa81dpon01.admiral.non-prod.bolt.admiral.uk",
+      "*cqa81dpon01.admiral.non-prod.bolt.admiral.uk*"
+    ]
   },
+  
 };
 
 export default config;
