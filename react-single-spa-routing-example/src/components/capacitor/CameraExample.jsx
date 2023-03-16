@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Camera, CameraResultType } from "@capacitor/camera";
+import { registerPlugin } from '@capacitor/core';
+const Echo = registerPlugin('Echo');
 
 const CameraExample = () => {
   const [photo, setPhoto] = useState(null);
@@ -12,6 +14,14 @@ const CameraExample = () => {
     });
     setPhoto(image.webPath);
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const { value } = await Echo.echo({ value: 'Hello World!' });
+      console.log('Response from native:', value);
+    };
+    fetchData();
+  }, []);
 
   return (
     <div>
